@@ -12,6 +12,11 @@ inquirer.prompt([
     },
     {
         type: "input",
+        message: "Provide a description of your project",
+        name: "description"
+    },
+    {
+        type: "input",
         message: "Does your app have any dependencies? If so, please list.",
         name: "dependency",
         default: "none"
@@ -48,4 +53,47 @@ inquirer.prompt([
         validate: (value)=>{ if(value){return true} else {return "I need input to proceed."}}
     }
 
-])
+]).then(({
+    title,
+    dependency,
+    description,
+    instructions,
+    contributors,
+    license,
+    githubName,
+    userEmail
+})=>{
+    //template
+    const template = `# ${title}
+* [Description](#-description)
+* [Installation](#-dependency)
+* [Instructions](#-instructions)
+* [Contributors](#-contributors)
+* [License](#-license)
+# Description
+    ${description}
+# Installation
+    ${dependency}
+# Contributors
+    ${contributors}
+# Instructions
+    ${instructions}
+# License
+    ${license}
+    
+#Contact
+* Github :${githubName}
+* E-mail :${userEmail}`;
+    //function to create readme
+    createNewFile(title,template);
+}
+);
+//creating function 
+function createNewFile(filename,data){
+    fs.writeFile(`./${filename.toLowerCase().split(' ').join('')}.md`,data,(err)=>{
+        if(err){
+            console.log(err)
+        }
+        console.log("readme complete!");
+    })
+}
