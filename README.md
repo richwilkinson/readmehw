@@ -1,25 +1,25 @@
 # README
 * [Description](#-description)
-* [Installation](#-dependency)
+* [Installation](#-installation)
 * [Instructions](#-instructions)
 * [Contributors](#-contributors)
 * [License](#-license)
 * [Contact](#-contact)
-* [DEMO](#-Video)
+* [Demo](#-video)
 # Description
-    Using NodeJS and Fs + Inquirer I created a README generator. Using CLI prompts to inquire the required info from the user to create a detailed README. A template is applied to the README to create anchor links.
+    Using NodeJS, Fs, Inquirer I created a readme generator. Using command line propmts to inquire and collect information from the user. The info is then written onto a markdown file using Fs. The markdown file is given a template to create anchor links to various portions of the file.
 # Installation
     Inquirer
 # Contributors
     none
 # Instructions
-    You first install the required packages for use. Then you run the file in Node, then you follow the CLI prompts to enter the required information to create your README.
+    You first download the necessary packages. Then you run the file in node, then follow the CLI prompts and provide the info necessary to create your own README.
 # License
     none
     
 # Contact
-* Github :RichWilkinson
+* Github :Richwilkinson
 * E-mail :Richardwilkinson@live.com
 
 # Video
-* https://drive.google.com/file/d/18Zr3WMKo473qu1hQMaYahDDx1DTNADiT/view
+* https://drive.google.com/file/d/1hfqECT1DaLB94sqh4iLErX2BetgT8DlT/view

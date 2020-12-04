@@ -66,7 +66,7 @@ inquirer.prompt([
     //template
     const template = `# ${title}
 * [Description](#-description)
-* [Installation](#-dependency)
+* [Installation](#-installation)
 * [Instructions](#-instructions)
 * [Contributors](#-contributors)
 * [License](#-license)
