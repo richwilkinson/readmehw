@@ -70,6 +70,7 @@ inquirer.prompt([
 * [Instructions](#-instructions)
 * [Contributors](#-contributors)
 * [License](#-license)
+* [Contact](#-contact)
 # Description
     ${description}
 # Installation
@@ -81,7 +82,7 @@ inquirer.prompt([
 # License
     ${license}
     
-#Contact
+# Contact
 * Github :${githubName}
 * E-mail :${userEmail}`;
     //function to create readme
